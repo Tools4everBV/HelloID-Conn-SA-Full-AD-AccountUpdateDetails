@@ -1,0 +1,155 @@
+[
+    {
+        "label":  "Select user account",
+        "fields":  [
+                       {
+                           "key":  "searchfield",
+                           "templateOptions":  {
+                                                   "label":  "Search",
+                                                   "placeholder":  "Username or email address"
+                                               },
+                           "type":  "input",
+                           "summaryVisibility":  "Hide element",
+                           "requiresTemplateOptions":  true
+                       },
+                       {
+                           "key":  "gridUsers",
+                           "templateOptions":  {
+                                                   "label":  "Select user account",
+                                                   "required":  true,
+                                                   "grid":  {
+                                                                "columns":  [
+                                                                                {
+                                                                                    "headerName":  "DisplayName",
+                                                                                    "field":  "displayName"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "UserPrincipalName",
+                                                                                    "field":  "UserPrincipalName"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "Department",
+                                                                                    "field":  "Department"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "Title",
+                                                                                    "field":  "Title"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "Description",
+                                                                                    "field":  "Description"
+                                                                                }
+                                                                            ],
+                                                                "height":  300,
+                                                                "rowSelection":  "single"
+                                                            },
+                                                   "dataSourceConfig":  {
+                                                                            "dataSourceGuid":  "$dataSourceGuid_0",
+                                                                            "input":  {
+                                                                                          "propertyInputs":  [
+                                                                                                                 {
+                                                                                                                     "propertyName":  "searchUser",
+                                                                                                                     "otherFieldValue":  {
+                                                                                                                                             "otherFieldKey":  "searchfield"
+                                                                                                                                         }
+                                                                                                                 }
+                                                                                                             ]
+                                                                                      }
+                                                                        },
+                                                   "useFilter":  false
+                                               },
+                           "type":  "grid",
+                           "summaryVisibility":  "Show",
+                           "requiresTemplateOptions":  true
+                       }
+                   ]
+    },
+    {
+        "label":  "Details",
+        "fields":  [
+                       {
+                           "key":  "gridDetails",
+                           "templateOptions":  {
+                                                   "label":  "Basic attributes",
+                                                   "required":  false,
+                                                   "grid":  {
+                                                                "columns":  [
+                                                                                {
+                                                                                    "headerName":  "Name",
+                                                                                    "field":  "name"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "Value",
+                                                                                    "field":  "value"
+                                                                                }
+                                                                            ],
+                                                                "height":  350,
+                                                                "rowSelection":  "single"
+                                                            },
+                                                   "dataSourceConfig":  {
+                                                                            "dataSourceGuid":  "$dataSourceGuid_1",
+                                                                            "input":  {
+                                                                                          "propertyInputs":  [
+                                                                                                                 {
+                                                                                                                     "propertyName":  "selectedUser",
+                                                                                                                     "otherFieldValue":  {
+                                                                                                                                             "otherFieldKey":  "gridUsers"
+                                                                                                                                         }
+                                                                                                                 }
+                                                                                                             ]
+                                                                                      }
+                                                                        },
+                                                   "useFilter":  false
+                                               },
+                           "type":  "grid",
+                           "summaryVisibility":  "Hide element",
+                           "requiresTemplateOptions":  true
+                       },
+                       {
+                           "key":  "company",
+                           "templateOptions":  {
+                                                   "label":  "Company",
+                                                   "useDataSource":  false,
+                                                   "displayField":  "company",
+                                                   "useFilter":  false,
+                                                   "useDependOn":  true,
+                                                   "dependOn":  "gridUsers",
+                                                   "dependOnProperty":  "Company"
+                                               },
+                           "type":  "input",
+                           "summaryVisibility":  "Show",
+                           "requiresTemplateOptions":  true
+                       },
+                       {
+                           "key":  "department",
+                           "templateOptions":  {
+                                                   "label":  "Department",
+                                                   "useDataSource":  false,
+                                                   "displayField":  "department",
+                                                   "useFilter":  false,
+                                                   "useDependOn":  true,
+                                                   "dependOn":  "gridUsers",
+                                                   "dependOnProperty":  "Department"
+                                               },
+                           "type":  "input",
+                           "summaryVisibility":  "Show",
+                           "requiresTemplateOptions":  true
+                       },
+                       {
+                           "key":  "title",
+                           "templateOptions":  {
+                                                   "label":  "Job title",
+                                                   "useDataSource":  false,
+                                                   "displayField":  "title",
+                                                   "useFilter":  false,
+                                                   "useDependOn":  true,
+                                                   "dependOn":  "gridUsers",
+                                                   "dependOnProperty":  "Title"
+                                               },
+                           "type":  "input",
+                           "summaryVisibility":  "Show",
+                           "requiresTemplateOptions":  true
+                       }
+                   ]
+    }
+]
