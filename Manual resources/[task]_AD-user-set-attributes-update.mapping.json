@@ -1,0 +1,18 @@
+[
+    {
+        "name":  "company",
+        "value":  "{{form.company}}"
+    },
+    {
+        "name":  "department",
+        "value":  "{{form.department}}"
+    },
+    {
+        "name":  "title",
+        "value":  "{{form.title}}"
+    },
+    {
+        "name":  "userPrincipalName",
+        "value":  "{{form.gridUsers.UserPrincipalName}}"
+    }
+]
