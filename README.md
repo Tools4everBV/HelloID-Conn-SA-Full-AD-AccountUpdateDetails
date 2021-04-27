@@ -44,3 +44,6 @@ This Powershell data source runs an Active Directory query to select an extended
 
 ### Delegated form task 'AD-user-set-attributes-update'
 This delegated form task will update the account attributes of the selected AD user account.
+
+# HelloID Docs
+The official HelloID documentation can be found at: https://docs.helloid.com/
