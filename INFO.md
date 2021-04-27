@@ -1,6 +1,6 @@
 # Account Update Details
 
-This form allows the Servicedesk to update the following fields of an AD account:
+This form updates the following fields of an AD account:
 
 - Title
 - Department
@@ -10,4 +10,4 @@ These fields are often used in the Address List, email signatures, and other app
 
 ## Business Benefits
 
-Users can update the title, department, or company without direct access to AD. By controlling access to AD, security is improved.
+This form can update the title, department, or company without direct access to AD. By controlling access to AD, security is improved.
