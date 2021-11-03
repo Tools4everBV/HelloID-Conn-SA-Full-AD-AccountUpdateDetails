@@ -5,7 +5,14 @@ This HelloID Service Automation Delegated Form provides AD user account update d
  2. Show basic AD user account attributes of selected target user
  3. Enter new values for the following AD user account attributes; Company, Department and Title
  5. AD user account attributes are updated with new values
- 
+
+
+## Versioning
+| Version | Description | Date |
+| - | - | - |
+| 1.0.1   | Added version number and updated all-in-one script | 2021/11/03  |
+| 1.0.0   | Initial release | 2020/09/01  |
+
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 * [Description](#description)
@@ -13,6 +20,7 @@ This HelloID Service Automation Delegated Form provides AD user account update d
   * [Getting started](#getting-started)
 * [Post-setup configuration](#post-setup-configuration)
 * [Manual resources](#manual-resources)
+* [Getting help](#getting-help)
 
 
 ## All-in-one PowerShell setup script
@@ -45,5 +53,8 @@ This Powershell data source runs an Active Directory query to select an extended
 ### Delegated form task 'AD-user-set-attributes-update'
 This delegated form task will update the account attributes of the selected AD user account.
 
-# HelloID Docs
+## Getting help
+_If you need help, feel free to ask questions on our [forum](https://forum.helloid.com/forum/helloid-connectors/service-automation/507-helloid-sa-active-directory-ad-account-update-details)_
+
+## HelloID Docs
 The official HelloID documentation can be found at: https://docs.helloid.com/
