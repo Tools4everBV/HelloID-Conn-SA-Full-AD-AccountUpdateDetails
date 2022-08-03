@@ -50,7 +50,7 @@ This Powershell data source runs an Active Directory query to search for matchin
 ### Powershell data source 'AD-user-generate-table-attributes-update-details'
 This Powershell data source runs an Active Directory query to select an extended list of user attributes of the selected AD user account.  
 
-### Delegated form task 'AD-user-set-attributes-update'
+### Delegated form task 'AD Account - Update details'
 This delegated form task will update the account attributes of the selected AD user account.
 
 ## Getting help
